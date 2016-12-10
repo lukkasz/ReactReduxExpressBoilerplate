@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function App() {
 	return (
-	  <div className="roww">
+	  <div className="row">
 	    <div className="col-md-12">
     		<h2 className="text-center headline">React Redux Express Boilerplate</h2>
     		<ul className="list-group col-sm-4 col-sm-offset-4">

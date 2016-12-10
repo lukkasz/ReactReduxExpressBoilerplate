@@ -1,4 +1,4 @@
-import {expect} from 'app/tests/test_helper';
+import {expect} from 'chai';
 
 describe('CHECK IF TEST SUIT WORKS', () => {
   it('should properly run tests', () => {

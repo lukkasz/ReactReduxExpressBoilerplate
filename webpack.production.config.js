@@ -3,8 +3,6 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/only-dev-server',
     'script!jquery/dist/jquery.min.js',
     './app/index.jsx'
   ],
@@ -16,8 +14,7 @@ module.exports = {
     new webpack.ProvidePlugin({
       '$': 'jquery',
       'jQuery': 'jquery'
-    }),
-    new webpack.HotModuleReplacementPlugin()
+    })
   ],
   output: {
     path: path.resolve(__dirname, "public/assets/"),
@@ -27,7 +24,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      loaders: ['react-hot','babel-loader?presets[]=react,presets[]=es2015,presets[]=stage-1'],
+      loaders: ['babel-loader?presets[]=react,presets[]=es2015,presets[]=stage-1'],
       include: path.join(__dirname, 'app'),
       exclude: /node_modules/
     },
@@ -45,5 +42,4 @@ module.exports = {
     },
     extensions: ['', '.js', '.jsx']
   },
-  devtool: 'cheap-module-eval-source-map'
 };

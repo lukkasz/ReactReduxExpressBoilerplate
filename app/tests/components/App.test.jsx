@@ -1,4 +1,7 @@
-import {renderComponent, expect} from 'app/tests/test_helper';
+import {expect} from 'chai';
+import {shallow} from 'enzyme';
+import React from 'react';
+
 import App from 'app/components/App';
 
 describe('App', () => {
@@ -6,12 +9,11 @@ describe('App', () => {
 	let component;
 
 	beforeEach(()=>{
-		component = renderComponent(App);
+		component = shallow(<App />);
 	});
 
 	it('shows a row', ()=>{
-		expect(component).to.have.class('roww');
-	
+		expect(component.find('.row')).to.exist;
 	});
 
 	it('shows ul.list-group element', () => {
