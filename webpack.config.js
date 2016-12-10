@@ -45,5 +45,9 @@ module.exports = {
     },
     extensions: ['', '.js', '.jsx']
   },
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './public'
+  },
   devtool: 'cheap-module-eval-source-map'
 };

@@ -6,7 +6,7 @@
   "repository": "git@github.com:lukkasz/ReactReduxExpressBoilerplate.git",
   "scripts": {
     "test": "NODE_PATH=./ mocha --compilers js:babel-core/register --require ./app/tests/setup.js  'app/tests/**/*.test.jsx'",
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base ./public",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "start": "npm run build && node ./server",
     "build": "node ./node_modules/webpack/bin/webpack.js -p --config ./webpack.production.config.js"
   },
