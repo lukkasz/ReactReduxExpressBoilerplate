@@ -12,7 +12,7 @@ export default function App() {
 				<li className="list-group-item">Express</li>
 				<li className="list-group-item">Bootstrap</li>
 				<li className="list-group-item">Sass</li>
-				<li className="list-group-item">jQuery</li>
+				<li className="list-group-item">jQuersy</li>
 			</ul>
 	    </div>
     </div>
